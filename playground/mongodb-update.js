@@ -26,20 +26,20 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (error, db) => {
     //   console.log(result);
     // });
 
-    db.collection('Users').findOneAndUpdate({
-      name: 'Ólafur'
-    }, {
-      $set: {
-        name: 'Eðvald'
-      },
-      $inc: {
-        age: 1
-      }
-    }, {
-      returnOriginal: false
-    }).then((result) => {
-      console.log(result);
-    });
+    // db.collection('Users').findOneAndUpdate({
+    //   name: 'Ólafur'
+    // }, {
+    //   $set: {
+    //     name: 'Eðvald'
+    //   },
+    //   $inc: {
+    //     age: 1
+    //   }
+    // }, {
+    //   returnOriginal: false
+    // }).then((result) => {
+    //   console.log(result);
+    // });
 
     // db.close();
 });
